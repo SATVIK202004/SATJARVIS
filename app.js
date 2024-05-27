@@ -46,49 +46,49 @@ btn.addEventListener('click', () => {
 function takeCommand(message) {
     if (message.includes('hey') || message.includes('hello')) {
         speak("Hello Sir, How May I Help You?");
-    } else if (message.includes("open google")) {
+    } else if (message.includes(" google")) {
         window.open("https://google.com", "_blank");
         speak("Opening Google...");
-    } else if (message.includes("open youtube")) {
+    } else if (message.includes(" youtube")) {
         window.open("https://youtube.com", "_blank");
         speak("Opening Youtube...");
-    } else if (message.includes("open facebook")) {
+    } else if (message.includes(" facebook")) {
         window.open("https://facebook.com", "_blank");
         speak("Opening Facebook...");
-    } else if (message.includes("open twitter")) {
+    } else if (message.includes(" twitter")) {
         window.open("https://twitter.com", "_blank");
         speak("Opening Twitter...");
-    } else if (message.includes("open instagram")) {
+    } else if (message.includes(" instagram")) {
         window.open("https://instagram.com", "_blank");
         speak("Opening Instagram...");
-    } else if (message.includes("open reddit")) {
+    } else if (message.includes(" reddit")) {
         window.open("https://reddit.com", "_blank");
         speak("Opening Reddit...");
-    } else if (message.includes("open linkedin")) {
+    } else if (message.includes(" linkedin")) {
         window.open("https://linkedin.com", "_blank");
         speak("Opening LinkedIn...");
-    } else if (message.includes("open pinterest")) {
+    } else if (message.includes(" pinterest")) {
         window.open("https://pinterest.com", "_blank");
         speak("Opening Pinterest...");
-    } else if (message.includes("open github")) {
+    } else if (message.includes(" github")) {
         window.open("https://github.com", "_blank");
         speak("Opening GitHub...");
-    } else if (message.includes("open stack overflow")) {
+    } else if (message.includes(" stack overflow")) {
         window.open("https://stackoverflow.com", "_blank");
         speak("Opening Stack Overflow...");
-    } else if (message.includes("open spotify")) {
+    } else if (message.includes(" spotify")) {
         window.open("https://spotify.com", "_blank");
         speak("Opening Spotify...");
-    } else if (message.includes("open netflix")) {
+    } else if (message.includes(" netflix")) {
         window.open("https://netflix.com", "_blank");
         speak("Opening Netflix...");
-    } else if (message.includes("open amazon")) {
+    } else if (message.includes(" amazon")) {
         window.open("https://amazon.com", "_blank");
         speak("Opening Amazon...");
-    } else if (message.includes("open ebay")) {
+    } else if (message.includes(" ebay")) {
         window.open("https://ebay.com", "_blank");
         speak("Opening eBay...");
-    } else if (message.includes("open wikipedia")) {
+    } else if (message.includes(" wikipedia")) {
         window.open("https://en.wikipedia.org/wiki/" + message.replace("wikipedia", "").trim(), "_blank");
         speak("This is what I found on Wikipedia regarding " + message);
     } else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
@@ -106,11 +106,11 @@ function takeCommand(message) {
     } else if (message.includes('set alarm')) {
         const alarmTime = message.replace('set alarm for ', '').trim();
         speak("Setting an alarm for " + alarmTime);
-        // Here you would typically have additional code to actually set the alarm
+        
     } else if (message.includes('set timer')) {
         const timerDuration = message.replace('set timer for ', '').trim();
         speak("Setting a timer for " + timerDuration + " minutes");
-        // Here you would typically have additional code to actually set the timer
+        
     } else if (message.includes('open camera')) {
         openCamera();
     } else if (message.includes('take screenshot')) {
